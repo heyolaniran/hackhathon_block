@@ -4,7 +4,9 @@ import {v}  from "convex/values";
 export const createChange = mutation({
     args: {
         name : v.string(),
-        bonus : v.number(), 
+        bonus_achat : v.number(), 
+        bonus_vente: v.number(),
+        url: v.string(), 
         enabled : v.boolean()
     }, 
 
@@ -16,9 +18,7 @@ export const createChange = mutation({
 
 
 export const getChanges = query({
-    args: {
-        _id : v.string()
-    },
+    args: {},
     async handler (context, args) {
     
         return await context.db.query("changes").collect();  
