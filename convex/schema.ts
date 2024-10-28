@@ -10,4 +10,13 @@ export default defineSchema({
     url : v.string(), 
     name: v.string(),
   }),
+
+  users : defineTable({
+    tokenIdentifier: v.string(),
+    name : v.string(), 
+    address : v.optional(v.string()), 
+    uid : v.string()
+  
+  }).index("by_tokenidentifier", ['tokenIdentifier'])
+    .index("by_uid", ['uid']) 
 });

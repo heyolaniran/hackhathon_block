@@ -62,3 +62,14 @@
     @apply bg-background text-foreground;
   }
 }
+
+.struggle { 
+  background-image: url("../../public/images/vector.svg");
+  background-position : 40% 95%  ; 
+  background-repeat: no-repeat;
+  background-size: 11rem;
+  padding-bottom: 6%;
+  cursor: pointer;
+  transition: 1s;
+
+}

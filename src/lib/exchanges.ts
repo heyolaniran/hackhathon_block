@@ -8,7 +8,7 @@ import { useQuery } from "convex/react"
 
 export const exchanges = () => {
 
-    const [exchanges, setExchanges] = useState<any[]>(); 
+    const [changes, setExchanges] = useState<any[]>(); 
 
     const [isLoading, setIsLoading] = useState<boolean>(true); 
 
@@ -24,6 +24,6 @@ export const exchanges = () => {
     }, [])
 
 
-    return {isLoading, exchanges}
+    return {isLoading, changes}
 
 }

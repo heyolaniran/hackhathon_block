@@ -23,6 +23,7 @@ export const xofFetcher = () => {
         }).then((response) => {
             setXOF(response.data.data.XOF)
             setIsLoading(false)
+            console.log(response.data.data.XOF)
         })
     }, [])
     
